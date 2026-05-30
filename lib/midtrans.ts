@@ -1,7 +1,7 @@
 import crypto from 'crypto'
 
 const MIDTRANS_SERVER_KEY = process.env.MIDTRANS_SERVER_KEY ?? ''
-const isProduction = process.env.NODE_ENV === 'production'
+const isProduction = process.env.NEXT_PUBLIC_MIDTRANS_IS_PRODUCTION === 'true'
 const MIDTRANS_API_URL = isProduction
   ? 'https://app.midtrans.com/snap/v1/transactions'
   : 'https://app.sandbox.midtrans.com/snap/v1/transactions'

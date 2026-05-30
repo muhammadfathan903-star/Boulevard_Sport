@@ -37,7 +37,7 @@ export function SnapPopup({ snapToken, orderId }: SnapPopupProps) {
 
   return (
     <Script 
-      src={process.env.NODE_ENV === 'production' 
+      src={process.env.NEXT_PUBLIC_MIDTRANS_IS_PRODUCTION === 'true' 
         ? 'https://app.midtrans.com/snap/snap.js' 
         : 'https://app.sandbox.midtrans.com/snap/snap.js'}
       data-client-key={process.env.NEXT_PUBLIC_MIDTRANS_CLIENT_KEY}
