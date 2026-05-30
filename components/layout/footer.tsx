@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ShoppingBag, AtSign, MessageCircle } from 'lucide-react'
+import { ShoppingBag, Instagram, MessageCircle } from 'lucide-react'
 
 export function Footer() {
   return (
@@ -45,10 +45,12 @@ export function Footer() {
             <h3 className="text-sm font-bold text-white uppercase tracking-widest">Ikuti Kami</h3>
             <div className="flex items-center gap-3">
               <a
-                href="#"
+                href="https://www.instagram.com/mhmdfathan?igsh=MXowZThoZmp5bGk2&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-[#111] text-gray-400 transition-all hover:border-[#ccff00]/50 hover:bg-[#ccff00]/10 hover:text-[#ccff00] hover:shadow-[0_0_15px_rgba(204,255,0,0.2)]"
               >
-                <AtSign className="h-4 w-4" />
+                <Instagram className="h-4 w-4" />
               </a>
               <a
                 href="#"
